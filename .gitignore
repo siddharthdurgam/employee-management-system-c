@@ -1,0 +1,19 @@
+# Generated application data
+employee.dat
+employee.tmp
+
+# Compiled binaries
+employee_management_system
+employee_management_system.exe
+*.exe
+*.out
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
