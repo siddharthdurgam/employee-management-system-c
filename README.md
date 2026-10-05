@@ -2,6 +2,7 @@
 
 > **Terminal-based employee management application demonstrating C programming, CRUD operations, file handling, searching, filtering, validation, and configuration management.**
 
+![CI](https://github.com/siddharthdurgam/employee-management-system-c/actions/workflows/validate.yml/badge.svg)
 ![C](https://img.shields.io/badge/C-C11-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
 ![GCC](https://img.shields.io/badge/GCC-Compiler-4EAA25?style=for-the-badge&logo=gnu&logoColor=white)
 
@@ -12,16 +13,13 @@ This project is a command-line **Employee Management System** built in C. It dem
 ## ✨ Features
 
 - 🔐 Environment-configured login
-- ➕ Add employee records
-- ✏️ Modify employee records
-- 🗑️ Delete employee records
+- ➕ Add, modify and delete employee records
 - 🔎 Search employees by ID
-- 📋 Display all employees
-- 👤 Display basic employee information
+- 📋 Display employee information
 - 📞 Display contact information
-- ⚧️ Filter employees by gender
-- 📍 Filter employees by district
-- 🏢 Filter employees by branch
+- ⚧️ Filter by gender
+- 📍 Filter by district
+- 🏢 Filter by branch
 - 💾 Binary-file persistence
 - 🖥️ Cross-platform terminal input handling
 
@@ -43,11 +41,13 @@ This project is a command-line **Employee Management System** built in C. It dem
 
 ```text
 employee-management-system-c/
+├── .github/workflows/validate.yml
 ├── employee_management_system.c
 ├── README.md
-├── .gitignore
-└── employee.dat          # Generated locally at runtime
+└── .gitignore
 ```
+
+`employee.dat` is generated locally at runtime and should not be treated as a source-controlled application database.
 
 ## ▶️ Build & Run
 
@@ -104,19 +104,23 @@ employee_management_system.exe
 
 ## 💾 Data Storage
 
-Employee records are persisted in a local binary file named `employee.dat`, generated when the application is run.
+Employee records are persisted in a local binary file named `employee.dat`.
 
 > **Security note:** binary-file storage provides persistence, not encryption or database-level security.
 
+## 🧪 Automated Validation
+
+GitHub Actions compiles the application with strict compiler warnings on pushes and pull requests, then verifies that the executable is produced successfully.
+
 ## 🚀 Future Improvements
 
-- Replace binary storage with a relational database
-- Add password hashing and stronger authentication
-- Prevent duplicate employee IDs
-- Introduce role-based access control
-- Add automated tests
-- Build a GUI or web interface
-- Add database-backed reporting
+- Replace binary storage with a relational database.
+- Add password hashing and stronger authentication.
+- Prevent duplicate employee IDs.
+- Introduce role-based access control.
+- Add automated functional tests.
+- Build a GUI or web interface.
+- Add database-backed reporting.
 
 ## 👤 Author
 
